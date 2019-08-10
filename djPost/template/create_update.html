@@ -1,0 +1,7 @@
+{%extends 'base.html'%} {% block content %}
+
+<form method="POST" , action="." , enctype="multipart/form-data" , aria-invalid="false"> {% csrf_token %} {{form.as_p}}
+    <input type="submit" , name="Submit">
+</form>
+
+{% endblock content %}
